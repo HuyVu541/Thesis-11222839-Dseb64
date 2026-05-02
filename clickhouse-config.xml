@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<yandex>
+    <listen_host replace="replace">0.0.0.0</listen_host>
+    <zookeeper>
+        <node>
+            <host>zookeeper</host>
+            <port>2181</port>
+        </node>
+    </zookeeper>
+    <remote_servers>
+        <local>
+            <shard>
+                <replica>
+                    <host>localhost</host>
+                    <port>9000</port>
+                </replica>
+            </shard>
+        </local>
+    </remote_servers>
+    <macros>
+        <shard>01</shard>
+        <replica>01</replica>
+    </macros>
+</yandex>
